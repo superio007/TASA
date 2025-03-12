@@ -4,8 +4,8 @@ const HeroSection = () => {
     return (
       <>
         <div className={`${styles.bg}`}>
-          <Parallax translateY={["-60%", "50%"]}>
-            <div className="flex justify-center items-center min-h-screen">
+          <Parallax translateY={["-40%", "50%"]}>
+            <div className="flex justify-center items-center min-h-[80vh]">
               <h1 className="font-bold text-9xl text-center text-white">
                 TASA
               </h1>

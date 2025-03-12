@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="bg-white">
         <div className="container mx-auto pt-14 pb-32 p-4 xl:px-80">
           <div className="p-8">
-            <h1 className="font-bold text-4xl text-center">Stay In Touch</h1>
+            <h1 className="font-bold text-2xl xl:text-4xl text-center">Stay In Touch</h1>
           </div>
           <div className={``}>
             <div className={`${styles.parent} w-[980px] relative  h-[650px]`}>
