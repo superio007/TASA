@@ -1,8 +1,13 @@
+import Contact from "../components/contactPage/Contact";
+import HeroSection from "../components/HomePage/HeroSection"
+import { ParallaxProvider } from "react-scroll-parallax";
 const HomePage = () => {
   return (
     <>
-      <div className="">
-      </div>
+      <ParallaxProvider>
+        <HeroSection />
+      </ParallaxProvider>
+      <Contact />
     </>
   );
 };
