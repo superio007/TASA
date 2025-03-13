@@ -5,12 +5,14 @@ import MainLayout from "./Layouts/MainLayout"
 import ProjectBrief from "./pages/ProjectBriefPage"
 import Projects from "./pages/ProjectsPage"
 import About from "./pages/AboutPage"
+import Publications from "./pages/PublicationPage"
 import {
   Route,
   createBrowserRouter,
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
+import { RxFontRoman } from "react-icons/rx"
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -18,6 +20,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/publications" element={<Publications />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:id" element={<ProjectBrief />} />
         <Route path="*" element={<NotFound />} />
