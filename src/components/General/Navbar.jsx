@@ -19,31 +19,32 @@ const Navbar = () => {
   return (
     <>
       <div className="bg-[#e8e8e8] border-b-2 border-black">
-        <div className="container mx-auto p-4 xl:px-80">
+        <div className="container mx-auto p-4 xl:px-0 2xl:px-80">
           <div className="flex justify-between items-center">
-            <div className="">
+            <div className="flex flex-col">
               <Link to={"/"}>
-                <span className="text-4xl text-black font-bold">TASA</span>
+                <span className={styles.logo}>TASA</span>
+                <span className={styles.sublogo}>designs</span>
               </Link>
             </div>
             <div className="hidden xl:flex flex-row gap-8 items-center">
               <NavLink to={"/publications"}>
-                <p className="hover:bg-[#007fff] hover:text-white px-1 py-3 rounded-3xl uppercase">
+                <p className="  hover:rounded-none px-1 py-3 rounded-3xl uppercase">
                   Publications
                 </p>
               </NavLink>
               <NavLink to={"/projects"}>
-                <p className="hover:bg-[#007fff] hover:text-white p-2 rounded-2xl uppercase">
+                <p className="  hover:rounded-none p-2 rounded-2xl uppercase">
                   Projects
                 </p>
               </NavLink>
               <NavLink to={"/about"}>
-                <p className="hover:bg-[#007fff] hover:text-white p-2 rounded-2xl uppercase">
+                <p className="  hover:rounded-none p-2 rounded-2xl uppercase">
                   Our Story
                 </p>
               </NavLink>
               <NavLink to={"/contact"}>
-                <p className="hover:bg-[#007fff] hover:text-white p-2 rounded-2xl uppercase">
+                <p className="  hover:rounded-none p-2 rounded-2xl uppercase">
                   Contact
                 </p>
               </NavLink>
@@ -95,28 +96,29 @@ const Navbar = () => {
       </div>
       {/* Mobile Menu (Toggled) */}
       <div
+        id="mobile-menu"
         className={`xl:hidden ${styles.mobileMenuNav} ${
           isMenuOpen ? "block" : "hidden"
         } p-4 bg-white xl:px-10 flex flex-col justify-between min-h-screen`}
       >
         <div className="flex flex-col justify-center text-center gap-6">
           <NavLink to={"/publications"}>
-            <p className="hover:bg-[#007fff] hover:text-white p-2 rounded-2xl uppercase">
+            <p className="  hover:rounded-none p-2 rounded-2xl uppercase">
               Publications
             </p>
           </NavLink>
           <NavLink to={"/projects"}>
-            <p className="hover:bg-[#007fff] hover:text-white p-2 rounded-2xl uppercase">
+            <p className="  hover:rounded-none p-2 rounded-2xl uppercase">
               Projects
             </p>
           </NavLink>
           <NavLink to={"/about"}>
-            <p className="hover:bg-[#007fff] hover:text-white p-2 rounded-2xl uppercase">
+            <p className="  hover:rounded-none p-2 rounded-2xl uppercase">
               Our Story
             </p>
           </NavLink>
           <NavLink to={"/contact"}>
-            <p className="hover:bg-[#007fff] hover:text-white p-2 rounded-2xl uppercase">
+            <p className="  hover:rounded-none p-2 rounded-2xl uppercase">
               Contact
             </p>
           </NavLink>

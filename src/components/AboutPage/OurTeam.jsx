@@ -34,7 +34,7 @@ const OurTeam = () => {
               </div>
             </div>
           </div>
-          <div className="flex md:p-0 p-4 flex-col mt-24 pb-24 md:items-end items-center">
+          <div className="flex md:p-0 p-4 flex-col mt-24 md:items-end items-center">
             <div className={`${styles.LeftParent} flex px-12 pb-24 flex-col`}>
               <p className="text-lg pb-3 font-normal">John Doe</p>
               <div className="border-t-1 border-black w-[45px]"></div>

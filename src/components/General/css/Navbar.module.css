@@ -1,3 +1,20 @@
-.mobileMenuNav{
+.mobileMenuNav {
   height: 100vh;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 6px;
+}
+
+.sublogo {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 9px;
+  margin-top: -10px;
 }
