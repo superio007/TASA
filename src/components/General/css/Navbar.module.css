@@ -5,6 +5,7 @@
 .logo {
   display: block;
   text-align: center;
+  color: #8E8E8E;
   font-size: 40px;
   font-weight: 300;
   letter-spacing: 6px;
@@ -13,8 +14,9 @@
 .sublogo {
   display: block;
   text-align: center;
+  color: #8E8E8E;
   font-size: 16px;
   font-weight: 300;
-  letter-spacing: 9px;
+  letter-spacing: 8px;
   margin-top: -10px;
 }

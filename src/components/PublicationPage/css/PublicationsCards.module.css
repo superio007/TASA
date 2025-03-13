@@ -7,7 +7,7 @@
     position: relative;
 }
 
-.LeftParent :global(img) {
+.LeftParent .LeftImage {
     position: relative;
     bottom: -100px;
     width: 100%;
@@ -15,8 +15,8 @@
 }
 
 .LeftChild {
-    width: 400px;
-    height: 250px;
+    width: 472px;
+    /* height: 250px; */
     position: absolute;
     top: 0;
     transform: translate(10%, 0%);
@@ -24,7 +24,7 @@
 
 .RightChild {
     width: 225px;
-    height: 400px;
+    /* height: 400px; */
     position: absolute;
     bottom: -40%;
     right: -8%;

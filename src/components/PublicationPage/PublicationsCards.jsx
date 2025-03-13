@@ -1,10 +1,24 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Left from "./assets/HeroSectionBack.avif";
+import Left from "./assets/TASAAR.webp";
 import styles from "./css/PublicationsCards.module.css";
+import Logo from "./assets/deZeen.png";
 import { MdOutlineArrowRight } from "react-icons/md";
 function PublicationsCards() {
-  let publication = [{}, {}];
+  let publication = [
+    {
+      ArticleLogo: "./src/components/PublicationPage/assets/deZeen.png",
+      ArticleTitle:
+        "This Mumbai office adapts Japandi design to the Indian context",
+      ArticleLink:
+        "https://www.architecturaldigest.in/story/this-mumbai-office-adapts-japandi-design-to-the-indian-context/",
+      ArticleDescription: `“As an architect, I was looking for a style and strong
+                    foundation that would define my work—serving as an
+                    architectural signature in everything I built,” recalls
+                    Tanzeem Sarguroh, when looking back at how she found a way
+                    to blend Japandi (Japanese-Scandinavian)....”`,
+    },
+  ];
   // console.log(publication.length)
   return (
     <>
@@ -15,48 +29,44 @@ function PublicationsCards() {
             <div key={index} className="flex pt-18 flex-col items-center">
               <div className={styles.LeftSuperParent}>
                 <div className={styles.LeftParent}>
-                  <img src={Left} alt="" />
-                  <div className={`${styles.LeftChild} md:px-12 p-8 md:py-18 bg-white`}>
-                    <p className="text-sm pb-3 font-medium">
-                      Project {index + 1}
+                  <img className={styles.LeftImage} src={Left} alt="" />
+                  <div
+                    className={`${styles.LeftChild} md:px-12 p-8 md:py-16 bg-white`}
+                  >
+                    <div className="flex w-full justify-start items-center">
+                      <img src={item.ArticleLogo} alt="" className="h-[60px]" />
+                    </div>
+                    <p
+                      className="font-light py-3 text-[22.6px]"
+                      style={{
+                        fontFamily: "Copse, serif",
+                        fontStyle: "normal",
+                        fontWeight: "400",
+                      }}
+                    >
+                      {item.ArticleTitle}
                     </p>
-                    <div className="border-t-1 border-black w-[70px]"></div>
-                    <p className="font-light py-3 text-sm">
-                      I'm a paragraph. Click here to add your own text and edit
-                      me. Let your users get to know you.
-                    </p>
-                    <NavLink to={`/projects/${index + 1}`}>
-                      <div className="flex items-center ">
-                        <div className="border-t-1 border-black w-[70px]"></div>
-                        <MdOutlineArrowRight
-                          style={{
-                            marginLeft: "-8px",
-                            fontSize: "12px",
-                          }}
-                        />
-                      </div>
-                    </NavLink>
                   </div>
                   <div className={`${styles.RightChild} px-10 py-12 bg-white`}>
-                    <p className="text-sm pb-3 font-medium">
-                      Project {index + 1}
-                    </p>
                     <div className="border-t-1 border-black w-[70px]"></div>
                     <p className="font-light py-3 text-sm">
-                      I'm a paragraph. Click here to add your own text and edit
-                      me. Let your users get to know you.
+                      {item.ArticleDescription}
                     </p>
-                    <NavLink to={`/projects/${index + 1}`}>
+                    <a
+                      href={item.ArticleLink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <div className="flex items-center ">
-                        <div className="border-t-1 border-black w-[70px]"></div>
+                        <span className="text-sm">Read More</span>
                         <MdOutlineArrowRight
                           style={{
-                            marginLeft: "-8px",
-                            fontSize: "12px",
+                            // marginLeft: "-8px",
+                            fontSize: "20px",
                           }}
                         />
                       </div>
-                    </NavLink>
+                    </a>
                   </div>
                 </div>
               </div>
