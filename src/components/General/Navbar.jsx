@@ -18,7 +18,7 @@ const Navbar = () => {
   }, [isMenuOpen]); 
   return (
     <>
-      <div className="bg-[#e8e8e8]">
+      <div className="bg-[#e8e8e8] border-b-2 border-black">
         <div className="container mx-auto p-4 xl:px-80">
           <div className="flex justify-between items-center">
             <div className="">

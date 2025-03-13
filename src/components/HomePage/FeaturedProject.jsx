@@ -5,7 +5,7 @@ import { MdOutlineArrowRight } from "react-icons/md";
 import Project4 from "./Project4";
 import Project5 from "./Poject5";
 import Project3 from "./Project3"
-
+import { NavLink } from "react-router-dom";
 
 const FeaturedProject = () => {
   return (
@@ -30,12 +30,14 @@ const FeaturedProject = () => {
                       I'm a paragraph. Click here to add your own text and edit
                       me. Let your users get to know you.
                     </p>
-                    <div className="flex items-center ">
-                      <div className="border-t-1 border-black w-[70px]"></div>
-                      <MdOutlineArrowRight
-                        style={{ marginLeft: "-8px", fontSize: "12px" }}
-                      />
-                    </div>
+                    <NavLink to={"/projects/1"}>
+                      <div className="flex items-center ">
+                        <div className="border-t-1 border-black w-[70px]"></div>
+                        <MdOutlineArrowRight
+                          style={{ marginLeft: "-8px", fontSize: "12px" }}
+                        />
+                      </div>
+                    </NavLink>
                   </div>
                 </div>
               </div>
@@ -51,12 +53,14 @@ const FeaturedProject = () => {
                       I'm a paragraph. Click here to add your own text and edit
                       me. Let your users get to know you.
                     </p>
-                    <div className="flex items-center ">
-                      <div className="border-t-1 border-black w-[70px]"></div>
-                      <MdOutlineArrowRight
-                        style={{ marginLeft: "-8px", fontSize: "12px" }}
-                      />
-                    </div>
+                    <NavLink to={"/projects/2"}>
+                      <div className="flex items-center ">
+                        <div className="border-t-1 border-black w-[70px]"></div>
+                        <MdOutlineArrowRight
+                          style={{ marginLeft: "-8px", fontSize: "12px" }}
+                        />
+                      </div>
+                    </NavLink>
                   </div>
                 </div>
               </div>

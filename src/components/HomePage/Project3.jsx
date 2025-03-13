@@ -1,12 +1,15 @@
 import project3 from "./assets/project3.avif";
 import styles from "./css/FeaturedProject.module.css";
+import { NavLink } from "react-router-dom";
 import { MdOutlineArrowRight } from "react-icons/md";
 const Project = () => {
   return (
     <>
       <div className="container mx-auto pt-7 pb-32 p-4 xl:px-35">
         <div className="relative">
-          <div className={`${styles.project3} border-black border-2 py-10 px-34`}>
+          <div
+            className={`${styles.project3} border-black border-2 py-10 px-34`}
+          >
             <p className="text-sm pb-3 font-medium">Project 4</p>
             <div className="border-t-1 border-black w-[70px]"></div>
             <p className="font-light py-3 text-sm">
@@ -25,12 +28,14 @@ const Project = () => {
               competitors. Make your company stand out and show your visitors
               who you are.
             </p>
-            <div className="flex items-center ">
-              <div className="border-t-1 border-black w-[70px]"></div>
-              <MdOutlineArrowRight
-                style={{ marginLeft: "-8px", fontSize: "12px" }}
-              />
-            </div>
+            <NavLink to="/projects/3">
+              <div className="flex items-center ">
+                <div className="border-t-1 border-black w-[70px]"></div>
+                <MdOutlineArrowRight
+                  style={{ marginLeft: "-8px", fontSize: "12px" }}
+                />
+              </div>
+            </NavLink>
           </div>
           <div>
             <img className={`${styles.project3Img}`} src={project3} alt="" />

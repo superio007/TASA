@@ -1,6 +1,7 @@
 import Project5 from "./assets/project5.avif";
 import styles from "./css/FeaturedProject.module.css";
 import { MdOutlineArrowRight } from "react-icons/md";
+import { NavLink } from "react-router-dom";
 const Project = () => {
   return (
     <>
@@ -17,12 +18,14 @@ const Project = () => {
                 It’s easy. Just click “Edit Text” or double click me to add your
                 own content and make changes to the font..
               </p>
-              <div className="flex items-center ">
-                <div className="border-t-1 border-black w-[70px]"></div>
-                <MdOutlineArrowRight
-                  style={{ marginLeft: "-8px", fontSize: "12px" }}
-                />
-              </div>
+              <NavLink to={`/projects/5`}>
+                <div className="flex items-center ">
+                  <div className="border-t-1 border-black w-[70px]"></div>
+                  <MdOutlineArrowRight
+                    style={{ marginLeft: "-8px", fontSize: "12px" }}
+                  />
+                </div>
+              </NavLink>
             </div>
           </div>
         </div>
